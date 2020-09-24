@@ -22,11 +22,17 @@ public class RazeCore {
             b = CGFloat(hexNumber & 0x0000ff) / 255
             return UIColor(red: r, green: g, blue: b, alpha: alpha)
         }
-        return UIColor(red: 0, green: 0, blue: 0, alpha: alpha)
+    return UIColor(red: 0, green: 0, blue: 0, alpha: alpha)
     }
     
     /// The most eye pleasing color know
     public static var razeColor: UIColor {
         return self.colorFromHexString("006736")
     }
+    
+    /// Return an object of UIColor
+    public static var secondaryRazeColor: UIColor {
+        return self.colorFromHexString("FCFFFD")
+    }
 }
+
